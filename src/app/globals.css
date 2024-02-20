@@ -2,32 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-image: url('/images/bg-dark.png'); */
+  background-color: #0e0711;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.info-card {
+  background: linear-gradient(#0d0d15, #0d0d15) padding-box,
+    linear-gradient(to bottom right, #b76dff, transparent 90%) border-box;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.slick-dots.slick-dots-techologies {
+  display: flex !important;
+  justify-content: center;
+}
+
+.slick-dots.slick-dots-techologies li {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  will-change: width;
+  margin: 0 7px;
+}
+
+.slick-dots.slick-dots-techologies li.slick-active {
+  @apply bg-purple-primary;
+  width: 30px;
 }
