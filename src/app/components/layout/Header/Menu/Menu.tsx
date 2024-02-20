@@ -1,16 +1,27 @@
 'use client'
-import { navItems } from '@/app/config/navItems'
-import { useState } from 'react'
-import { GiHamburgerMenu } from 'react-icons/gi'
-import { IoMdClose } from 'react-icons/io'
-import { Nav } from './Nav'
 import { MotionEffects } from '@/app/components/common/MotionEffects'
+import { navItems } from '@/app/config/navItems'
+import { useTheme } from 'next-themes'
+import { useEffect, useState } from 'react'
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { IoIosMoon, IoIosSunny, IoMdClose } from 'react-icons/io'
+import { Nav } from './Nav'
 
 export const Menu = () => {
+  const { theme, setTheme } = useTheme()
+
+  const [mounted, setMounted] = useState(false)
+
   const [navMobileOpen, setNavMobileOpen] = useState(false)
 
   const toggleNavMobile = () => {
     setNavMobileOpen(!navMobileOpen)
+  }
+
+  useEffect(() => setMounted(true), [])
+
+  if (!mounted) {
+    return null
   }
 
   return (
@@ -32,10 +43,22 @@ export const Menu = () => {
         >
           <Nav items={navItems} />
         </MotionEffects>
-        {/* <div className="flex gap-2">
-          <LuSun className="cursor-pointer" size={20} />
-          <IoLanguage className="cursor-pointer" size={20} />
-        </div> */}
+        <div className="flex gap-2 mr-auto">
+          {theme == 'dark' ? (
+            <IoIosSunny
+              className="cursor-pointer text-yellow-400"
+              size={30}
+              onClick={() => setTheme('light')}
+            />
+          ) : (
+            <IoIosMoon
+              className="cursor-pointer"
+              size={30}
+              onClick={() => setTheme('dark')}
+            />
+          )}
+          {/* <IoLanguage className="cursor-pointer" size={20} /> */}
+        </div>
         <div
           className="lg:hidden cursor-pointer select-none"
           onClick={toggleNavMobile}

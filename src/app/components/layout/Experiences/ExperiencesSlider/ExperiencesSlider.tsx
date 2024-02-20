@@ -1,9 +1,17 @@
 'use client'
-import { technologiesItems } from '@/app/config/technologiesItems'
 import Image from 'next/image'
 import Slider, { Settings } from 'react-slick'
 
-export const ExperiencesSlider = () => {
+type ExperiencesSliderProps = {
+  technologiesItems: {
+    url: string
+    technologie: string
+  }[]
+}
+
+export const ExperiencesSlider = ({
+  technologiesItems,
+}: ExperiencesSliderProps) => {
   const settings: Settings = {
     dots: true,
     infinite: true,
@@ -22,7 +30,7 @@ export const ExperiencesSlider = () => {
     <Slider {...settings}>
       {technologiesItems.map((item) => (
         <div key={item.url}>
-          <Image src={item.url} width={40} height={40} alt="" loading="lazy" />
+          <Image src={item.url} width={30} height={30} alt="" loading="lazy" />
         </div>
       ))}
     </Slider>

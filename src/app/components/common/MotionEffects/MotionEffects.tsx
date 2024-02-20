@@ -36,7 +36,7 @@ export const MotionEffects = ({
       exit={exit ? exit : { opacity: 0 }}
       initial="hidden"
       animate={mainControls}
-      className={`overflow-hidden ${className}`}
+      className={`${className ? className : ''}`}
     >
       {children}
     </motion.div>

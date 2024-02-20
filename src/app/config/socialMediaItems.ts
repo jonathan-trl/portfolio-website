@@ -5,3 +5,5 @@ export const linkedinLink = 'https://www.linkedin.com/in/jonathan-carvalho-dev/'
 export const githubLink = 'https://github.com/jonathan-trl?tab=repositories'
 
 export const curriculumLink = '/curriculo-jonathan-carvalho.pdf'
+
+export const emailLink = 'jonathan.carvalho1807@gmail.com'

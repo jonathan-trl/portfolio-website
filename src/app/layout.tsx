@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick.css'
 import { ScrollTopButton } from './components/common/ScrollTopButton'
 import { Footer } from './components/layout/Footer'
 import './globals.css'
+import { ThemeProvider } from './providers'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -18,11 +19,18 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-br">
+    <html lang="pt-br" suppressHydrationWarning>
       <body className={inter.className}>
-        <div className="container mx-auto">{children}</div>
-        <Footer />
-        <ScrollTopButton />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+          <Footer />
+          <ScrollTopButton />
+        </ThemeProvider>
       </body>
     </html>
   )

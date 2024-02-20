@@ -15,18 +15,22 @@ const config: Config = {
       },
       colors: {
         'purple-primary': '#800BF2',
+        'purple-secondary': '#1E0350',
+        'purple-dark': '#0e0711',
+        'gray-primary': '#1C1C1C',
       },
     },
     container: {
       padding: {
-        DEFAULT: '2rem',
-        sm: '2rem',
+        DEFAULT: '1.5rem',
+        sm: '1.5rem',
         lg: '4rem',
         xl: '5rem',
         '2xl': '6rem',
       },
     },
   },
+  darkMode: 'class',
   plugins: [],
 }
 export default config

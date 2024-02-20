@@ -1,12 +1,18 @@
 'use client'
-import { Transition, Variants } from 'framer-motion'
-import { HTMLProps, useRef } from 'react'
+import { AnimationProps } from 'framer-motion'
+import { HTMLProps, ReactNode } from 'react'
 import { MotionEffects } from '../MotionEffects'
+import { SectionHeader } from '../SectionHeader'
 
 type SectionProps = {
-  variants?: Variants
-  transition?: Transition
-} & HTMLProps<HTMLDivElement>
+  lightMode?: boolean
+  title?: string
+  subtitle?: string
+  center?: boolean
+  icon?: ReactNode
+  noSectionHeader?: boolean
+} & AnimationProps &
+  HTMLProps<HTMLDivElement>
 
 export const Section = ({
   children,
@@ -14,25 +20,44 @@ export const Section = ({
   className,
   variants,
   transition,
+  lightMode,
+  subtitle,
+  title,
+  icon,
+  center,
+  noSectionHeader,
 }: SectionProps) => {
   return (
-    <MotionEffects
-      variants={
-        variants
-          ? variants
-          : {
-              hidden: { opacity: 0, y: -75 },
-              visible: { opacity: 1, y: 0 },
-            }
-      }
-      transition={transition ? transition : { duration: 0.5, delay: 0.25 }}
+    <section
+      className={`${
+        lightMode ? 'bg-white dark:bg-purple-dark' : 'bg-purple-dark'
+      } ${className ? className : 'md:py-16 lg:py-20 py-10'}`}
+      id={id}
     >
-      <section
-        className={`${className ? className : 'md:py-16 lg:py-20 py-10'}`}
-        id={id}
+      <MotionEffects
+        variants={
+          variants
+            ? variants
+            : {
+                hidden: { opacity: 0, y: -75 },
+                visible: { opacity: 1, y: 0 },
+              }
+        }
+        transition={transition ? transition : { duration: 0.5, delay: 0.25 }}
       >
-        {children}
-      </section>
-    </MotionEffects>
+        <div className="container mx-auto">
+          {!noSectionHeader && title && subtitle && (
+            <SectionHeader
+              title={title}
+              subtitle={subtitle}
+              icon={icon}
+              center={center}
+              lightMode={lightMode}
+            />
+          )}
+          {children}
+        </div>
+      </MotionEffects>
+    </section>
   )
 }

@@ -2,6 +2,7 @@
 import { careerExperiencesItems } from '@/app/config/careerExperiencesItems'
 import { useState } from 'react'
 import { FaSuitcase } from 'react-icons/fa'
+import { LuCalendarClock } from 'react-icons/lu'
 import { PiEye, PiEyeClosed } from 'react-icons/pi'
 import { MotionEffects } from '../../common/MotionEffects'
 import { SectionHeader } from '../../common/SectionHeader'
@@ -13,22 +14,23 @@ export const MyCareer = () => {
     setSelectedCompanyId(companyId)
   }
   return (
-    <div className="grid md:grid-cols-3 xl:grid-cols-2 flex-col md:flex-row md:gap-4">
-      <div className="">
+    <div className="grid grid-cols-1 g md:grid-cols-3 md:gap-4">
+      <div className="flex flex-col gap-4">
         <SectionHeader
           title="Minha Carreira"
           subtitle="Experiências"
-          center
+          lightMode
           icon={<FaSuitcase />}
+          centerOnMobile
         />
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col md:pl-12 gap-4">
           {careerExperiencesItems.map((experience) => (
             <button
               key={experience.id}
               onClick={() => handleClick(experience.id)}
-              className={`flex justify-center items-center gap-3 text-xl lg:text-2xl hover:scale-105 transition-transform ${
+              className={`flex items-center justify-center md:justify-start gap-3 text-xl md:text-lg lg:text-2xl hover:scale-105 transition-transform ${
                 selectedCompanyId === experience.id
-                  ? 'font-bold text-white'
+                  ? 'font-bold text-gray-primary dark:text-white'
                   : 'font-normal text-zinc-400'
               }`}
             >
@@ -42,7 +44,7 @@ export const MyCareer = () => {
           ))}
         </div>
       </div>
-      <div className="md:col-span-2 xl:col-span-1 mt-6 md:mt-0 md:ml-9 max-w-[700px]">
+      <div className="mt-6 md:mt-0 md:ml-9 max-w-[500px] md:max-w-[700px] mx-auto md:col-span-2">
         {selectedCompanyId && (
           <>
             {careerExperiencesItems.map(
@@ -50,21 +52,26 @@ export const MyCareer = () => {
                 experience.id === selectedCompanyId && (
                   <MotionEffects
                     key={experience.id}
-                    initial={{ scale: 0, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1 }}
+                    variants={{
+                      hidden: { opacity: 0 },
+                      visible: { opacity: 1 },
+                    }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 0.2 }}
-                    className="text-center md:text-start"
+                    transition={{ duration: 0.6 }}
+                    className="text-center md:text-start text-gray-primary dark:text-white"
                   >
                     <p className="font-extrabold text-lg lg:text-2xl mb-2">
                       {experience.position}
                     </p>
 
-                    <p className="relative overflow-hidden font-semibold text-lg lg:text-2xl mb-2">
-                      {experience.time_period}
+                    <p className="relative flex items-center gap-2 overflow-hidden font-semibold text-lg lg:text-2xl mb-2">
+                      <span>
+                        <LuCalendarClock className="text-purple-dark dark:text-white" />
+                      </span>
+                      <span>{experience.time_period}</span>
                     </p>
 
-                    <ul className="list-disc gap-2 pl-8 md:px-0 md:pl-5 text-start">
+                    <ul className="list-disc gap-2 md:px-0 text-start">
                       {experience.responsibilities.map((responsibility) => (
                         <li
                           className="font-medium text-base lg:text-lg mt-2"

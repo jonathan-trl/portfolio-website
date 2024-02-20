@@ -59,7 +59,7 @@ export const Hero = () => {
                 hidden: { right: 0 },
                 visible: { right: '100%' },
               }}
-              className={`absolute w-full top-0 right-0 h-full bg-white z-50`}
+              className={`absolute w-full top-1/2 -translate-y-1/2 h-[80%] sm:h-full sm:top-0 sm:translate-y-0 right-0 bg-white z-50`}
             />
             Olá! 👋, <span className="text-white">eu sou</span>
           </span>
@@ -70,7 +70,7 @@ export const Hero = () => {
                 hidden: { left: 0 },
                 visible: { left: '100%' },
               }}
-              className={`absolute w-full top-0 right-0 h-full bg-purple-primary z-50`}
+              className={`absolute w-full top-1/2 -translate-y-1/2 h-[80%] sm:h-full sm:top-0 sm:translate-y-0 right-0 bg-purple-primary z-50`}
             />
             Jonathan <span className="text-purple-primary">Carvalho</span>
           </h1>
