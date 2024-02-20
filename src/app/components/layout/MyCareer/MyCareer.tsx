@@ -1,9 +1,9 @@
 'use client'
 import { careerExperiencesItems } from '@/app/config/careerExperiencesItems'
-import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { FaSuitcase } from 'react-icons/fa'
 import { PiEye, PiEyeClosed } from 'react-icons/pi'
+import { MotionEffects } from '../../common/MotionEffects'
 import { SectionHeader } from '../../common/SectionHeader'
 
 export const MyCareer = () => {
@@ -23,15 +23,14 @@ export const MyCareer = () => {
         />
         <div className="flex flex-col gap-4">
           {careerExperiencesItems.map((experience) => (
-            <motion.button
+            <button
               key={experience.id}
               onClick={() => handleClick(experience.id)}
-              className={`flex justify-center items-center gap-3 text-xl lg:text-2xl ${
+              className={`flex justify-center items-center gap-3 text-xl lg:text-2xl hover:scale-105 transition-transform ${
                 selectedCompanyId === experience.id
                   ? 'font-bold text-white'
                   : 'font-normal text-zinc-400'
               }`}
-              whileHover={{ scale: 1.03 }}
             >
               <span>{experience.company}</span>
               {selectedCompanyId === experience.id ? (
@@ -39,7 +38,7 @@ export const MyCareer = () => {
               ) : (
                 <PiEyeClosed />
               )}
-            </motion.button>
+            </button>
           ))}
         </div>
       </div>
@@ -49,7 +48,7 @@ export const MyCareer = () => {
             {careerExperiencesItems.map(
               (experience) =>
                 experience.id === selectedCompanyId && (
-                  <motion.div
+                  <MotionEffects
                     key={experience.id}
                     initial={{ scale: 0, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
@@ -57,12 +56,14 @@ export const MyCareer = () => {
                     transition={{ duration: 0.2 }}
                     className="text-center md:text-start"
                   >
-                    <p className="font-extrabold text-xl lg:text-2xl mb-2">
+                    <p className="font-extrabold text-lg lg:text-2xl mb-2">
                       {experience.position}
                     </p>
-                    <p className="font-semibold text-xl lg:text-2xl mb-2">
+
+                    <p className="relative overflow-hidden font-semibold text-lg lg:text-2xl mb-2">
                       {experience.time_period}
                     </p>
+
                     <ul className="list-disc gap-2 pl-8 md:px-0 md:pl-5 text-start">
                       {experience.responsibilities.map((responsibility) => (
                         <li
@@ -73,7 +74,7 @@ export const MyCareer = () => {
                         </li>
                       ))}
                     </ul>
-                  </motion.div>
+                  </MotionEffects>
                 )
             )}
           </>

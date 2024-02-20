@@ -15,9 +15,15 @@ export const Portfolio = () => {
         {portfolioItems.map((item) => (
           <div
             key={item.url}
-            className="info-card flex flex-col gap-4 justify-center items-center border-[4px] border-solid border-transparent py-4"
+            className="info-card rounded-2xl flex flex-col gap-4 justify-center items-center border-[4px] border-solid border-transparent py-4"
           >
-            <Image src={item.url} width={120} height={140} alt="" />
+            <Image
+              src={item.url}
+              width={120}
+              height={140}
+              alt=""
+              loading="lazy"
+            />
             <span>{item.description}</span>
             <button>Acessar</button>
           </div>

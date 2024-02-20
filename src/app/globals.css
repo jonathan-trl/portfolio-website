@@ -20,7 +20,6 @@ body {
 .info-card {
   background: linear-gradient(#0d0d15, #0d0d15) padding-box,
     linear-gradient(to bottom right, #b76dff, transparent 90%) border-box;
-  border-radius: 15px;
   border-style: solid;
   border-color: transparent;
 }

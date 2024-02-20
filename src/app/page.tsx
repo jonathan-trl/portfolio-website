@@ -1,3 +1,4 @@
+import { Section } from './components/common/Section'
 import { AboutMe } from './components/layout/AboutMe'
 import { Contact } from './components/layout/Contact'
 import { Experiencies } from './components/layout/Experiences'
@@ -10,24 +11,48 @@ export default function Home() {
       <header className="md:pb-10 lg:pb-20 pb-6">
         <Header />
       </header>
-      <section className="md:py-16 lg:py-20 py-10" id="about-me">
+      <Section
+        id="about-me"
+        variants={{
+          hidden: { opacity: 0, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+      >
         <AboutMe />
-      </section>
-      <section className="md:py-16 lg:py-20 py-10" id="technologies">
+      </Section>
+      <Section
+        id="technologies"
+        variants={{
+          hidden: { opacity: 0, x: -75 },
+          visible: { opacity: 1, x: 0 },
+        }}
+      >
         <Experiencies />
-      </section>
+      </Section>
       {/* <section className="md:py-16 lg:py-20 py-10" id="portfolio">
         <Portfolio />
       </section> */}
-      <section className="md:py-16 lg:py-20 py-10" id="my-career">
+      <Section
+        id="my-career"
+        variants={{
+          hidden: { opacity: 0, y: -75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+      >
         <MyCareer />
-      </section>
+      </Section>
       {/* <section className="md:py-20 py-10">
         <MyClients />
       </section> */}
-      <section className="md:py-16 lg:py-20 py-10" id="contact">
+      <Section
+        id="contact"
+        variants={{
+          hidden: { opacity: 0, x: 75 },
+          visible: { opacity: 1, x: 0 },
+        }}
+      >
         <Contact />
-      </section>
+      </Section>
     </>
   )
 }
