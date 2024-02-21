@@ -1,47 +1,12 @@
 import { Button } from '@/app/components/common/Button'
 import { IconLink } from '@/app/components/common/IconLink'
 import { MotionEffects } from '@/app/components/common/MotionEffects'
-import {
-  curriculumLink,
-  githubLink,
-  linkedinLink,
-  whatsappLink,
-} from '@/app/config/socialMediaItems'
-import { FaGithub, FaLink, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
+import { curriculumLink, socialMediaItems } from '@/app/config/socialMediaItems'
+import { FaLink } from 'react-icons/fa'
 import { CustomTypewriter } from './CustomTypewriter'
 import { MyPicture } from './MyPicture'
 
 export const Hero = () => {
-  const socialMediaItems = [
-    {
-      url: linkedinLink,
-      icon: (
-        <FaLinkedin
-          size={38}
-          className="text-white/50 hover:text-white transition-colors"
-        />
-      ),
-    },
-    {
-      url: githubLink,
-      icon: (
-        <FaGithub
-          size={38}
-          className="text-white/50 hover:text-white transition-colors"
-        />
-      ),
-    },
-    {
-      url: whatsappLink,
-      icon: (
-        <FaWhatsapp
-          size={38}
-          className="text-white/50 hover:text-white transition-colors"
-        />
-      ),
-    },
-  ]
-
   return (
     <MotionEffects
       transition={{ duration: 0.7, ease: 'easeIn' }}
@@ -87,12 +52,19 @@ export const Hero = () => {
           </div>
           <div className="flex w-100 items-center justify-center gap-2">
             {socialMediaItems.map((item) => (
-              <IconLink key={item.url} href={item.url} icon={item.icon} />
+              <IconLink
+                key={item.url}
+                href={item.url}
+                icon={item.icon}
+                className={'text-[30px] md:text-[38px]'}
+              />
             ))}
           </div>
         </div>
 
-        <MyPicture />
+        <div className="relative mb-4 lg:mb-0 order-1 lg:order-2">
+          <MyPicture />
+        </div>
       </div>
     </MotionEffects>
   )

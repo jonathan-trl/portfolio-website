@@ -1,4 +1,4 @@
-import { CareerExperienceItem } from '../types/CareerExperience'
+import { CareerExperienceItem } from '../models/CareerExperience'
 
 export const careerExperiencesItems: CareerExperienceItem[] = [
   {
@@ -124,6 +124,11 @@ export const careerExperiencesItems: CareerExperienceItem[] = [
         id: 2,
         description:
           'Liderança no desenvolvimento de um e-commerce em WordPress para venda de camisas de futebol. Contribui para o sucesso do e-commerce, proporcionando uma experiência de compra intuitiva e atraente, resultando em significativa quantidade de vendas.',
+      },
+      {
+        id: 3,
+        description:
+          'Participei do desenvolvimento de um aplicativo em React Native para massagens naturais, proporcionando conveniência aos usuários ao agendar terapias no conforto de casa.',
       },
     ],
   },

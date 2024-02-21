@@ -64,7 +64,7 @@ export const MyCareer = () => {
                       {experience.position}
                     </p>
 
-                    <p className="relative flex items-center gap-2 overflow-hidden font-semibold text-lg lg:text-2xl mb-2">
+                    <p className="relative flex items-center justify-center md:justify-start gap-2 overflow-hidden font-semibold text-lg lg:text-2xl mb-2">
                       <span>
                         <LuCalendarClock className="text-purple-dark dark:text-white" />
                       </span>

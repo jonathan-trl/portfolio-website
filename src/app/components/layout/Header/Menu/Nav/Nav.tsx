@@ -1,4 +1,4 @@
-import { NavProps } from '@/app/types/Nav'
+import { NavProps } from '@/app/models/Nav'
 
 export const Nav = ({ items }: NavProps) => {
   return (

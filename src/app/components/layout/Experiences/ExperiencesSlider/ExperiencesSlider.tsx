@@ -1,16 +1,14 @@
 'use client'
+import { TechnologyItem } from '@/app/models/Technology'
 import Image from 'next/image'
 import Slider, { Settings } from 'react-slick'
 
 type ExperiencesSliderProps = {
-  technologiesItems: {
-    url: string
-    technologie: string
-  }[]
+  technologyItems: TechnologyItem[]
 }
 
 export const ExperiencesSlider = ({
-  technologiesItems,
+  technologyItems,
 }: ExperiencesSliderProps) => {
   const settings: Settings = {
     dots: true,
@@ -28,7 +26,7 @@ export const ExperiencesSlider = ({
   }
   return (
     <Slider {...settings}>
-      {technologiesItems.map((item) => (
+      {technologyItems.map((item) => (
         <div key={item.url}>
           <Image src={item.url} width={30} height={30} alt="" loading="lazy" />
         </div>

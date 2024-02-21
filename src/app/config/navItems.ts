@@ -1,4 +1,4 @@
-import { NavItem } from '../types/Nav'
+import { NavItem } from '../models/Nav'
 
 export const navItems: NavItem[] = [
   { label: 'Sobre mim', link: '#about-me' },

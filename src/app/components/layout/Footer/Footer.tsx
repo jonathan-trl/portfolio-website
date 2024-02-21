@@ -11,22 +11,10 @@ export const Footer = () => {
       <div className="order-1 sm:order-2 flex item-center gap-4">
         <IconLink
           href={linkedinLink}
-          icon={
-            <FaLinkedin
-              size={23}
-              className="text-white/50 hover:text-white transition-colors"
-            />
-          }
+          icon={FaLinkedin}
+          className={'text-[30px]'}
         />
-        <IconLink
-          href={githubLink}
-          icon={
-            <FaGithub
-              size={23}
-              className="text-white/50 hover:text-white transition-colors"
-            />
-          }
-        />
+        <IconLink href={githubLink} icon={FaGithub} className={'text-[30px]'} />
       </div>
     </footer>
   )

@@ -5,7 +5,3 @@ export type CareerExperienceItem = {
   time_period: string
   responsibilities: { id: number; description: string }[]
 }
-
-export type CareerExperienceProps = {
-  items: CareerExperienceItem[]
-}
