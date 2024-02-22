@@ -16,7 +16,7 @@ export const Hero = () => {
       }}
     >
       <div className="flex flex-col lg:flex-row items-center justify-between py-2">
-        <div className="flex flex-col items-center lg:items-start gap-1 md:gap-4 lg:gap-6 order-2 lg:order-1">
+        <div className="flex flex-col items-center lg:items-start gap-1 md:gap-4 order-2 lg:order-1">
           <span className="relative overflow-hidden text-purple-primary font-bold text-lg md:text-4xl">
             <MotionEffects
               transition={{ duration: 1.1, ease: 'easeIn' }}
@@ -28,7 +28,7 @@ export const Hero = () => {
             />
             Olá! 👋, <span className="text-white">eu sou</span>
           </span>
-          <h1 className="relative overflow-hidden font-extrabold text-2xl md:text-[52px] md:leading-10">
+          <h1 className="relative font-barlow-condensed overflow-hidden font-extrabold text-2xl md:text-[52px] leading-[100%]">
             <MotionEffects
               transition={{ duration: 1.1, ease: 'easeIn' }}
               variants={{

@@ -7,7 +7,7 @@ export const Nav = ({ items }: NavProps) => {
         <a
           href={item.link}
           key={item.link}
-          className="hover:text-purple-primary transition-colors"
+          className="hover:text-purple-primary transition-colors font-normal lg:font-bold text-lg lg:text-2xl"
         >
           {item.label}
         </a>

@@ -19,6 +19,9 @@ const config: Config = {
         'purple-dark': '#0e0711',
         'gray-primary': '#1C1C1C',
       },
+      fontSize: {
+        '5xl': ['3rem', '4rem'],
+      },
     },
     container: {
       padding: {
@@ -28,6 +31,10 @@ const config: Config = {
         xl: '5rem',
         '2xl': '6rem',
       },
+    },
+    fontFamily: {
+      'barlow-condensed': 'var(--font-barlow-condensed)',
+      'plus-jakarta-sans': 'var(--font-plus-jakarta-sans)',
     },
   },
   darkMode: 'class',

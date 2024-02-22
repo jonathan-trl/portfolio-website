@@ -60,7 +60,7 @@ export const MyCareer = () => {
                     transition={{ duration: 0.6 }}
                     className="text-center md:text-start text-gray-primary dark:text-white"
                   >
-                    <p className="font-extrabold text-lg lg:text-2xl mb-2">
+                    <p className="font-extrabold text-lg lg:text-2xl mb-2 font-plus-jakarta-sans">
                       {experience.position}
                     </p>
 
@@ -74,7 +74,7 @@ export const MyCareer = () => {
                     <ul className="list-disc gap-2 md:px-0 text-start">
                       {experience.responsibilities.map((responsibility) => (
                         <li
-                          className="font-medium text-base lg:text-lg mt-2"
+                          className="font-medium text-base lg:text-lg mt-2 font-plus-jakarta-sans"
                           key={responsibility.id}
                         >
                           {responsibility.description}

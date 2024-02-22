@@ -31,7 +31,7 @@ export const InfoCard = ({
         <div>{icon}</div>
         <div className="mt-4 text-center">
           <div className="font-medium text-sm lg:text-xl">{firstText}</div>
-          <div className="font-extrabold text-lg lg:text-3xl">{secondText}</div>
+          <div className="font-extrabold text-lg lg:text-3xl font-plus-jakarta-sans">{secondText}</div>
         </div>
       </div>
     </MotionEffects>

@@ -12,7 +12,7 @@ export const AboutMe = () => {
         }}
         className="grid grid-cols-1 md:grid-cols-2 gap-6"
       >
-        <div className="text-base font-normal 2xl:pr-12 text-gray-primary dark:text-white">
+        <div className="text-base md:text-xl font-normal 2xl:pr-12 text-gray-primary dark:text-white">
           <div>
             Sou um Desenvolvedor Front End experiente em auxiliar empresas a
             alcançarem seus objetivos, entregando soluções de software de alta

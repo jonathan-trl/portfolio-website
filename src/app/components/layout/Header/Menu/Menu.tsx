@@ -1,4 +1,5 @@
 'use client'
+import { Logo } from '@/app/components/common/Logo'
 import { MotionEffects } from '@/app/components/common/MotionEffects'
 import { navItems } from '@/app/config/navItems'
 import { useTheme } from 'next-themes'
@@ -27,13 +28,7 @@ export const Menu = () => {
   return (
     <div className="pt-10 pb-6 md:pb-16">
       <div className="flex flex-1 justify-between gap-4 w-full items-center">
-        <h1 className="font-bold text-2xl">
-          <span>J</span>
-          <span className="text-purple-primary border-b-2 border-purple-primary w-50">
-            N
-          </span>
-          <span>T-c</span>
-        </h1>
+        <Logo />
         <MotionEffects
           variants={{
             hidden: { opacity: 0, x: 75 },
