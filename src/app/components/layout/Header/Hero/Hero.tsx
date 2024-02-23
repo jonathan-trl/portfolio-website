@@ -16,7 +16,7 @@ export const Hero = () => {
       }}
     >
       <div className="flex flex-col lg:flex-row items-center justify-between py-2">
-        <div className="flex flex-col items-center lg:items-start gap-1 md:gap-4 order-2 lg:order-1">
+        <div className="flex flex-col items-center lg:items-start gap-1 md:gap-2 order-2 lg:order-1">
           <span className="relative overflow-hidden text-purple-primary font-bold text-lg md:text-4xl">
             <MotionEffects
               transition={{ duration: 1.1, ease: 'easeIn' }}

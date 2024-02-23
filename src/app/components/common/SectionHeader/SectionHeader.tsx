@@ -22,9 +22,9 @@ export const SectionHeader = ({
     centerOnMobile ? 'justify-center md:justify-start' : ''
   }`
   return (
-    <div className={`relative mb-4 w-full `}>
+    <div className={`relative mb-4 w-full`}>
       <h2
-        className={`relative overflow-hidden font-barlow-condensed font-bold text-lg md:text-2xl lg:text-4xl text-purple-primary mb-1 md:mb-2 lg:mb-4 flex justify-start leading-2 ${centerText}`}
+        className={`relative overflow-hidden font-barlow-condensed font-bold text-lg md:text-2xl lg:text-4xl text-purple-primary mb-0 flex justify-start leading-2 ${centerText}`}
       >
         <MotionEffects
           transition={{ duration: 0.7, ease: 'easeIn' }}
@@ -38,7 +38,7 @@ export const SectionHeader = ({
       </h2>
 
       <h1
-        className={`relative overflow-hidden font-plus-jakarta-sans font-extrabold text-xl md:text-3xl lg:text-5xl leading-[40px] flex items-center gap-2 dark:text-white ${
+        className={`relative overflow-hidden font-plus-jakarta-sans font-extrabold text-xl md:text-3xl lg:text-5xl flex items-center gap-2 dark:text-white ${
           lightMode ? ' text-purple-secondary' : 'text-white'
         }  ${centerText}`}
       >

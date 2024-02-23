@@ -8,7 +8,7 @@ export const Experiencies = () => {
 
   return (
     <>
-      <div className="max-w-[300px] mx-auto mt-3 sm:hidden">
+      <div className="max-w-[300px] mx-auto mt-3 sm:hidden mb-10">
         <ExperiencesSlider technologyItems={technologyItems} />
       </div>
       <div className="relative hidden sm:flex max-w-[1000px] mx-auto gap-8 mt-8 flex-wrap justify-center items-center">

@@ -23,12 +23,12 @@ body {
   border-color: transparent;
 }
 
-.slick-dots.slick-dots-techologies {
+.slick-dots {
   display: flex !important;
   justify-content: center;
 }
 
-.slick-dots.slick-dots-techologies li {
+.slick-dots li {
   width: 8px;
   height: 8px;
   background-color: #fff;
@@ -42,7 +42,8 @@ body {
   @apply bg-purple-primary/30;
 }
 
-.slick-dots.slick-dots-techologies li.slick-active {
-  @apply bg-purple-primary;
+.light .slick-dots li.slick-active,
+.dark .slick-dots li.slick-active {
+  @apply bg-purple-primary/100;
   width: 30px;
 }

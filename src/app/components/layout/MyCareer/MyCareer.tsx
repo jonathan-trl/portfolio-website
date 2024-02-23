@@ -15,7 +15,7 @@ export const MyCareer = () => {
   }
   return (
     <div className="grid grid-cols-1 g md:grid-cols-3 md:gap-4">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-1 md:gap-2">
         <SectionHeader
           title="Minha Carreira"
           subtitle="Experiências"
@@ -71,7 +71,7 @@ export const MyCareer = () => {
                       <span>{experience.time_period}</span>
                     </p>
 
-                    <ul className="list-disc gap-2 md:px-0 text-start">
+                    <ul className="list-disc md:px-0 text-start">
                       {experience.responsibilities.map((responsibility) => (
                         <li
                           className="font-medium text-base lg:text-lg mt-2 font-plus-jakarta-sans"

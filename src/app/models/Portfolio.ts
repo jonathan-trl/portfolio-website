@@ -1,4 +1,5 @@
 export type PortfolioItem = {
   url: string
-  description: string
+  title: string
+  description?: string
 }
