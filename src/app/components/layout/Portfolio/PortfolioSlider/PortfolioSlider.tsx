@@ -21,9 +21,9 @@ export const PortfolioSlider = () => {
       </div>
     ),
     className: 'slick-portfolio',
-    dotsClass: 'slick-dots -bottom-8',
-    prevArrow: <CarouselNextArrow />,
-    nextArrow: <CarouselPrevArrow />,
+    dotsClass: 'slick-dots -bottom-8 md:-bottom-12',
+    prevArrow: <CarouselPrevArrow />,
+    nextArrow: <CarouselNextArrow />,
     responsive: [
       {
         breakpoint: 1040,
@@ -55,7 +55,7 @@ export const PortfolioSlider = () => {
       {portfolioItems.map((item) => (
         <div key={item.url}>
           <div className="flex flex-col justify-center items-center sm:px-2 text-center gap-4">
-            <div className="relative w-[314px] h-[270px]">
+            <div className="relative max-w-[314px] max-h-[270px]">
               <Image
                 src={`/images/portfolio/devices2.png`}
                 alt=""

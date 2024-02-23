@@ -10,13 +10,13 @@ import { ThemeProvider } from './providers'
 const barlow_condensed = Barlow_Condensed({
   weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
-  variable: "--font-barlow-condensed"
+  variable: '--font-barlow-condensed',
 })
 
 const plus_jakarta_sans = Plus_Jakarta_Sans({
   weight: ['500', '700', '800'],
   subsets: ['latin'],
-  variable: "--font-plus-jakarta-sans"
+  variable: '--font-plus-jakarta-sans',
 })
 
 export const metadata: Metadata = {
@@ -34,12 +34,7 @@ export default function RootLayout({
       <body
         className={`${barlow_condensed.variable} ${plus_jakarta_sans.variable} font-barlow-condensed`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}
           <Footer />
           <ScrollTopButton />

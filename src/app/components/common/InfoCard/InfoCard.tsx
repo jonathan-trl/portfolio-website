@@ -30,8 +30,10 @@ export const InfoCard = ({
       <div className="info-card rounded-2xl border-4 flex flex-col justify-center items-center w-full h-[215px] md:h-[286px]">
         <div>{icon}</div>
         <div className="mt-4 text-center">
-          <div className="font-medium text-sm lg:text-xl">{firstText}</div>
-          <div className="font-extrabold text-lg lg:text-3xl font-plus-jakarta-sans">{secondText}</div>
+          <div className="font-normal text-lg lg:text-xl">{firstText}</div>
+          <div className="font-extrabold text-2xl lg:text-3xl 2xl:text-4xl font-plus-jakarta-sans">
+            {secondText}
+          </div>
         </div>
       </div>
     </MotionEffects>

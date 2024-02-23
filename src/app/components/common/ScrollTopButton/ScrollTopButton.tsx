@@ -30,7 +30,7 @@ export const ScrollTopButton = () => {
 
   return (
     <div
-      className={`bottom-4 right-4 bg-purple-primary w-12 h-12 sm:w-16 sm:h-16 flex justify-center items-center rounded-full ${
+      className={`bottom-4 right-4 bg-purple-primary w-9 h-9 sm:w-12 sm:h-12 lg:w-14 lg:h-14 flex justify-center items-center rounded-full ${
         isVisible ? 'fixed' : 'hidden'
       }`}
     >
