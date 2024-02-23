@@ -55,12 +55,12 @@ export const PortfolioSlider = () => {
       {portfolioItems.map((item) => (
         <div key={item.url}>
           <div className="flex flex-col justify-center items-center sm:px-2 text-center gap-4">
-            <div className="relative max-w-[314px] max-h-[270px]">
+            <div className="relative max-w-[314px] max-h-[223px]">
               <Image
                 src={`/images/portfolio/devices2.png`}
                 alt=""
                 width={314}
-                height={270}
+                height={223}
                 loading="lazy"
                 className="object-cover"
               />
