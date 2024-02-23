@@ -41,10 +41,11 @@ export const PortfolioSlider = () => {
         },
       },
       {
-        breakpoint: 640,
+        breakpoint: 770,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
     ],
@@ -53,14 +54,17 @@ export const PortfolioSlider = () => {
     <Slider {...settings}>
       {portfolioItems.map((item) => (
         <div key={item.url}>
-          <div className="flex flex-col justify-center items-center text-center gap-4">
-            <Image
-              src={`/images/portfolio/devices2.png`}
-              width={270}
-              height={270}
-              alt=""
-              loading="lazy"
-            />
+          <div className="flex flex-col justify-center items-center sm:px-2 text-center gap-4">
+            <div className="relative w-[314px] h-[270px]">
+              <Image
+                src={`/images/portfolio/devices2.png`}
+                alt=""
+                width={314}
+                height={270}
+                loading="lazy"
+                className="object-cover"
+              />
+            </div>
             <h4 className="text-2xl font-plus-jakarta-sans">{item.title}</h4>
             {item.description && (
               <p className="text-base line-clamp-4 max-w-[400px]">
