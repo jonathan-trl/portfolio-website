@@ -32,7 +32,7 @@ export const careerExperiencesItems: CareerExperienceItem[] = [
   {
     id: 2,
     company: 'CTC Tech',
-    position: 'Desenvolvedor Front-end JR II',
+    position: 'Desenvolvedor Front-end',
     time_period: 'Setembro 2021 - Abril 2023',
     responsibilities: [
       {
@@ -60,7 +60,7 @@ export const careerExperiencesItems: CareerExperienceItem[] = [
   {
     id: 3,
     company: 'Click Code',
-    position: 'Desenvolvedor WordPress Freelancer',
+    position: 'Desenvolvedor WordPress',
     time_period: 'Fevereiro 2021 - Junho 2021',
     responsibilities: [
       {
@@ -112,7 +112,7 @@ export const careerExperiencesItems: CareerExperienceItem[] = [
   {
     id: 5,
     company: 'TRIAL',
-    position: 'Desenvolvedor Front-end Freelancer',
+    position: 'Desenvolvedor Front-end',
     time_period: 'Dezembro 2019 - Setembro 2021',
     responsibilities: [
       {
