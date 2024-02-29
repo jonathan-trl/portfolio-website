@@ -57,7 +57,7 @@ export const PortfolioSlider = () => {
           <div className="flex flex-col justify-center items-center sm:px-2 text-center gap-4">
             <div className="relative max-w-[314px] max-h-[223px]">
               <Image
-                src={`/images/portfolio/devices2.png`}
+                src={item.url}
                 alt=""
                 width={314}
                 height={223}
@@ -71,7 +71,12 @@ export const PortfolioSlider = () => {
                 {item.description && item.description}
               </p>
             )}
-            <Button title="Acessar" isDark className="w-[150px]" />
+            <Button
+              title="Acessar"
+              href={item.href}
+              isDark
+              className="w-[150px]"
+            />
           </div>
         </div>
       ))}
