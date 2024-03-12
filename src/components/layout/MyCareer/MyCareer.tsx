@@ -76,7 +76,7 @@ export const MyCareer = () => {
                       </span>
                     </p>
 
-                    <ul className="list-disc md:px-0 text-start">
+                    <ul className="list-disc pl-2 md:pl-0 text-start">
                       {t_experiences.rich(
                         `${experience.translate}.responsibilities`,
                         {

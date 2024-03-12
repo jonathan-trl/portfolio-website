@@ -69,7 +69,7 @@ export const PortfolioSlider = () => {
             </div>
             <h4 className="text-2xl font-plus-jakarta-sans">{item.title}</h4>
             {item.description && (
-              <p className="text-base line-clamp-4 max-w-[400px]">
+              <p className="text-base line-clamp-4 max-w-[300px]">
                 {t(`${item.description}.description`)}
               </p>
             )}
