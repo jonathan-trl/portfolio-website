@@ -1,5 +1,5 @@
 'use client'
-import { TechnologyItem } from '@/app/models/Technology'
+import { TechnologyItem } from '@/models/Technology'
 import Image from 'next/image'
 import Slider, { Settings } from 'react-slick'
 
