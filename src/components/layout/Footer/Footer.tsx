@@ -1,16 +1,16 @@
 import { githubLink, linkedinLink } from '@/config/socialMediaItems'
+import { useTranslations } from 'next-intl'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { IconLink } from '../../common/IconLink'
-import { useTranslations } from 'next-intl'
 
 export const Footer = () => {
   const t = useTranslations('footer')
   return (
-    <footer className="relative bg-[#7B4AE21A] flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 py-4">
-      <p className="text-white/55 text-[12px] sm:text-base order-2 sm:order-1">
+    <footer className="relative flex flex-col items-center justify-center gap-2 bg-[#7B4AE21A] py-4 sm:flex-row sm:gap-4">
+      <p className="order-2 text-[12px] text-white/55 sm:order-1 sm:text-base">
         {t('copyright')}
       </p>
-      <div className="order-1 sm:order-2 flex item-center gap-4">
+      <div className="item-center order-1 flex gap-4 sm:order-2">
         <IconLink
           href={linkedinLink}
           icon={FaLinkedin}

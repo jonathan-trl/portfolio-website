@@ -31,7 +31,7 @@ export const Section = ({
     <section
       className={`${
         lightMode ? 'bg-white dark:bg-purple-dark' : 'bg-purple-dark'
-      } ${className ? className : 'md:py-16 lg:py-20 py-10'}`}
+      } ${className ? className : 'py-10 md:py-16 lg:py-20'}`}
       id={id}
     >
       <MotionEffects

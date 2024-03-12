@@ -15,13 +15,13 @@ export const ThemeSwitcher = () => {
     <>
       {theme == 'dark' ? (
         <IoIosSunny
-          className="select-none cursor-pointer text-yellow-400"
+          className="cursor-pointer select-none text-yellow-400"
           size={30}
           onClick={() => setTheme('light')}
         />
       ) : (
         <IoIosMoon
-          className="select-none cursor-pointer"
+          className="cursor-pointer select-none"
           size={30}
           onClick={() => setTheme('dark')}
         />

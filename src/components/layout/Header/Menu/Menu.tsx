@@ -17,24 +17,24 @@ export const Menu = () => {
   }
 
   return (
-    <div className="pt-8 pb-6 md:pb-16">
-      <div className="flex flex-1 justify-between gap-4 w-full items-center">
+    <div className="pb-6 pt-8 md:pb-16">
+      <div className="flex w-full flex-1 items-center justify-between gap-4">
         <Logo />
         <MotionEffects
           variants={{
             hidden: { opacity: 0, x: 75 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="hidden lg:block flex-1"
+          className="hidden flex-1 lg:block"
         >
           <Nav items={navItems} />
         </MotionEffects>
-        <div className="flex items-center gap-2 mr-auto">
+        <div className="mr-auto flex items-center gap-2">
           <ThemeSwitcher />
           <LanguageSwitcher />
         </div>
         <div
-          className="lg:hidden cursor-pointer select-none"
+          className="cursor-pointer select-none lg:hidden"
           onClick={toggleNavMobile}
         >
           {!navMobileOpen ? (
@@ -45,7 +45,7 @@ export const Menu = () => {
         </div>
       </div>
       {navMobileOpen && (
-        <div className="lg:hidden mt-4">
+        <div className="mt-4 lg:hidden">
           <Nav items={navItems} />
         </div>
       )}

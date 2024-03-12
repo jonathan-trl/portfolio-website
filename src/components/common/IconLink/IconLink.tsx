@@ -14,7 +14,7 @@ export const IconLink = ({
     <a
       target="_blank"
       href={href}
-      className="text-base text-white/50 hover:text-white transition-colors"
+      className="text-base text-white/50 transition-colors hover:text-white"
     >
       <Icon className={`${iconClassName ? `${iconClassName}` : ''}`} />
     </a>

@@ -19,7 +19,7 @@ const CarouselArrowContainer = ({
   <button
     className={`absolute top-1/2 ${
       arrowDirection == 'next' ? '-right-12' : '-left-12'
-    } transform -translate-y-1/2 w-5 xl:w-7 h-5 xl:h-7 flex justify-center items-center bg-white rounded-full z-50 text-sm xl:text-base`}
+    } z-50 flex h-5 w-5 -translate-y-1/2 transform items-center justify-center rounded-full bg-white text-sm xl:h-7 xl:w-7 xl:text-base`}
     onClick={onClick}
   >
     <Icon className="text-purple-primary" />

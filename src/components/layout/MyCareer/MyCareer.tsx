@@ -17,7 +17,7 @@ export const MyCareer = () => {
     setSelectedCompanyId(companyId)
   }
   return (
-    <div className="grid grid-cols-1 g md:grid-cols-3 md:gap-4">
+    <div className="g grid grid-cols-1 md:grid-cols-3 md:gap-4">
       <div className="flex flex-col gap-1 md:gap-2">
         <SectionHeader
           title={t('my-career.title')}
@@ -26,12 +26,12 @@ export const MyCareer = () => {
           icon={<FaSuitcase />}
           centerOnMobile
         />
-        <div className="flex flex-col md:pl-12 gap-4">
+        <div className="flex flex-col gap-4 md:pl-12">
           {careerExperiencesItems.map((experience) => (
             <button
               key={experience.id}
               onClick={() => handleClick(experience.id)}
-              className={`flex items-center justify-center md:justify-start gap-3 text-xl md:text-lg lg:text-2xl hover:scale-105 transition-transform ${
+              className={`flex items-center justify-center gap-3 text-xl transition-transform hover:scale-105 md:justify-start md:text-lg lg:text-2xl ${
                 selectedCompanyId === experience.id
                   ? 'font-bold text-gray-primary dark:text-white'
                   : 'font-normal text-zinc-400'
@@ -47,7 +47,7 @@ export const MyCareer = () => {
           ))}
         </div>
       </div>
-      <div className="mt-6 md:mt-0 md:ml-9 max-w-[500px] md:max-w-[700px] mx-auto md:col-span-2">
+      <div className="mx-auto mt-6 max-w-[500px] md:col-span-2 md:ml-9 md:mt-0 md:max-w-[700px]">
         {selectedCompanyId && (
           <>
             {careerExperiencesItems.map(
@@ -61,13 +61,13 @@ export const MyCareer = () => {
                     }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="text-center md:text-start text-gray-primary dark:text-white"
+                    className="text-center text-gray-primary dark:text-white md:text-start"
                   >
-                    <p className="font-extrabold text-lg lg:text-2xl mb-2 font-plus-jakarta-sans">
+                    <p className="mb-2 font-plus-jakarta-sans text-lg font-extrabold lg:text-2xl">
                       {t_experiences(`${experience.translate}.position`)}
                     </p>
 
-                    <p className="relative flex items-center justify-center md:justify-start gap-2 overflow-hidden font-semibold text-lg lg:text-2xl mb-2">
+                    <p className="relative mb-2 flex items-center justify-center gap-2 overflow-hidden text-lg font-semibold md:justify-start lg:text-2xl">
                       <span>
                         <LuCalendarClock className="text-purple-dark dark:text-white" />
                       </span>
@@ -76,20 +76,20 @@ export const MyCareer = () => {
                       </span>
                     </p>
 
-                    <ul className="list-disc pl-2 md:pl-0 text-start">
+                    <ul className="list-disc pl-2 text-start md:pl-0">
                       {t_experiences.rich(
                         `${experience.translate}.responsibilities`,
                         {
                           li: (responsabilities) => (
-                            <li className="font-medium text-base lg:text-lg mt-2 font-plus-jakarta-sans">
+                            <li className="mt-2 font-plus-jakarta-sans text-base font-medium lg:text-lg">
                               {responsabilities}
                             </li>
                           ),
-                        }
+                        },
                       )}
                     </ul>
                   </MotionEffects>
-                )
+                ),
             )}
           </>
         )}

@@ -12,9 +12,9 @@ export const AboutMe = () => {
           hidden: { y: 75 },
           visible: { y: 0 },
         }}
-        className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        className="grid grid-cols-1 gap-6 md:grid-cols-2"
       >
-        <div className="text-base md:text-xl font-normal 2xl:pr-12 text-gray-primary dark:text-white">
+        <div className="text-base font-normal text-gray-primary dark:text-white md:text-xl 2xl:pr-12">
           <div>{t('profession')}</div>
           <div className="mt-4">{t('committed')}</div>
         </div>

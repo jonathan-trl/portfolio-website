@@ -8,16 +8,16 @@ export const Experiencies = () => {
 
   return (
     <>
-      <div className="max-w-[300px] mx-auto mt-3 sm:hidden mb-10">
+      <div className="mx-auto mb-10 mt-3 max-w-[300px] sm:hidden">
         <ExperiencesSlider technologyItems={technologyItems} />
       </div>
-      <div className="relative hidden sm:flex max-w-[1000px] mx-auto gap-8 mt-8 flex-wrap justify-center items-center">
+      <div className="relative mx-auto mt-8 hidden max-w-[1000px] flex-wrap items-center justify-center gap-8 sm:flex">
         {technologyItems.map((item) => (
           <div
             key={item.url}
-            className="flex flex-col justify-center items-center gap-4"
+            className="flex flex-col items-center justify-center gap-4"
           >
-            <div className="relative w-[50px] md:w-[60px] xl:w-[80px] h-[50px] md:h-[60px] xl:h-[80px] hover:scale-110 transition-transform">
+            <div className="relative h-[50px] w-[50px] transition-transform hover:scale-110 md:h-[60px] md:w-[60px] xl:h-[80px] xl:w-[80px]">
               <Image
                 src={item.url}
                 fill
@@ -26,7 +26,7 @@ export const Experiencies = () => {
                 loading="lazy"
               />
             </div>
-            <span className="font-medium text-lg text-purple-secondary dark:text-white">
+            <span className="text-lg font-medium text-purple-secondary dark:text-white">
               {item.technologie}
             </span>
           </div>

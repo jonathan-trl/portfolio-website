@@ -30,12 +30,12 @@ export const ScrollTopButton = () => {
 
   return (
     <div
-      className={`bottom-4 right-4 bg-purple-primary w-9 h-9 sm:w-12 sm:h-12 lg:w-14 lg:h-14 flex justify-center items-center rounded-full ${
+      className={`bottom-4 right-4 flex h-9 w-9 items-center justify-center rounded-full bg-purple-primary sm:h-12 sm:w-12 lg:h-14 lg:w-14 ${
         isVisible ? 'fixed' : 'hidden'
       }`}
     >
       <button
-        className="text-white sm:text-2xl font-bold py-2 px-4 rounded-full"
+        className="rounded-full px-4 py-2 font-bold text-white sm:text-2xl"
         onClick={scrollToTop}
       >
         <FaArrowUp />

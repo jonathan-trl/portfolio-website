@@ -42,10 +42,10 @@ export const LanguageSwitcher = () => {
       <div
         className={`absolute top-9 w-max ${
           isModalOpen ? 'flex' : 'hidden'
-        } flex-col p-2 z-50 rounded-md bg-white`}
+        } z-50 flex-col rounded-md bg-white p-2`}
       >
         <button
-          className="bg-white text-purple-dark mb-3 mt-2"
+          className="mb-3 mt-2 bg-white text-purple-dark"
           onClick={() => handleSelectLanguage('pt-br')}
           disabled={isPending}
         >
@@ -58,7 +58,7 @@ export const LanguageSwitcher = () => {
         </button>
         <hr className="border-black" />
         <button
-          className="bg-white text-purple-dark mt-3 mb-2"
+          className="mb-2 mt-3 bg-white text-purple-dark"
           onClick={() => handleSelectLanguage('en')}
           disabled={isPending}
         >

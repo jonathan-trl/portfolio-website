@@ -1,11 +1,11 @@
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { InfoCard } from '../../common/InfoCard'
-import { useTranslations } from 'next-intl'
 
 export const Informations = () => {
   const t = useTranslations('informations')
   return (
-    <div className="grid grid-cols-[256px] sm:grid-cols-2 xl:grid-cols-4 justify-center gap-10">
+    <div className="grid grid-cols-[256px] justify-center gap-10 sm:grid-cols-2 xl:grid-cols-4">
       <InfoCard
         firstText={t('card-one.first-text')}
         secondText={t('card-one.second-text')}

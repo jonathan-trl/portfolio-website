@@ -56,8 +56,8 @@ export const PortfolioSlider = () => {
     <Slider {...settings}>
       {portfolioItems.map((item) => (
         <div key={item.url}>
-          <div className="flex flex-col justify-center items-center sm:px-2 text-center gap-4">
-            <div className="relative max-w-[314px] max-h-[223px]">
+          <div className="flex flex-col items-center justify-center gap-4 text-center sm:px-2">
+            <div className="relative max-h-[223px] max-w-[314px]">
               <Image
                 src={item.url}
                 alt=""
@@ -67,9 +67,9 @@ export const PortfolioSlider = () => {
                 className="object-cover"
               />
             </div>
-            <h4 className="text-2xl font-plus-jakarta-sans">{item.title}</h4>
+            <h4 className="font-plus-jakarta-sans text-2xl">{item.title}</h4>
             {item.description && (
-              <p className="text-base line-clamp-4 max-w-[300px]">
+              <p className="line-clamp-4 max-w-[300px] text-base">
                 {t(`${item.description}.description`)}
               </p>
             )}

@@ -24,7 +24,7 @@ export const SectionHeader = ({
   return (
     <div className={`relative mb-4 w-full`}>
       <h2
-        className={`relative overflow-hidden font-barlow-condensed font-bold text-lg md:text-2xl lg:text-4xl text-purple-primary mb-0 flex justify-start leading-2 ${centerText}`}
+        className={`leading-2 relative mb-0 flex justify-start overflow-hidden font-barlow-condensed text-lg font-bold text-purple-primary md:text-2xl lg:text-4xl ${centerText}`}
       >
         <MotionEffects
           transition={{ duration: 0.7, ease: 'easeIn' }}
@@ -32,13 +32,13 @@ export const SectionHeader = ({
             hidden: { left: 0 },
             visible: { left: '100%' },
           }}
-          className={`absolute w-full top-1/2 -translate-y-1/2 h-[95%] sm:h-full sm:top-0 sm:translate-y-0 bg-purple-primary`}
+          className={`absolute top-1/2 h-[95%] w-full -translate-y-1/2 bg-purple-primary sm:top-0 sm:h-full sm:translate-y-0`}
         />
         - {title}
       </h2>
 
       <h1
-        className={`relative overflow-hidden font-plus-jakarta-sans font-extrabold text-xl md:text-3xl lg:text-5xl flex items-center gap-2 dark:text-white ${
+        className={`relative flex items-center gap-2 overflow-hidden font-plus-jakarta-sans text-xl font-extrabold dark:text-white md:text-3xl lg:text-5xl ${
           lightMode ? ' text-purple-secondary' : 'text-white'
         }  ${centerText}`}
       >
@@ -48,7 +48,7 @@ export const SectionHeader = ({
             hidden: { right: 0 },
             visible: { right: '100%' },
           }}
-          className={`absolute w-full top-1/2 -translate-y-1/2 h-[95%] sm:h-full sm:top-0 sm:translate-y-0 ${
+          className={`absolute top-1/2 h-[95%] w-full -translate-y-1/2 sm:top-0 sm:h-full sm:translate-y-0 ${
             lightMode ? 'bg-purple-secondary dark:bg-white' : 'bg-white'
           }`}
         />

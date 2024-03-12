@@ -16,7 +16,7 @@ export const MyPicture = () => {
         alt="Logo"
         layout="fill"
         loading="lazy"
-        className="object-cover info-card border-[6px] border-solid border-transparent rounded-full"
+        className="info-card rounded-full border-[6px] border-solid border-transparent object-cover"
       />
     </motion.div>
   )
