@@ -30,8 +30,8 @@ body {
 }
 
 .slick-dots li {
-  width: 8px;
-  height: 8px;
+  width: 8px!important;
+  height: 8px!important;
   background-color: #fff;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
@@ -46,5 +46,5 @@ body {
 .light .slick-dots li.slick-active,
 .dark .slick-dots li.slick-active {
   @apply bg-purple-primary/100;
-  width: 30px;
+  width: 30px!important;
 }
