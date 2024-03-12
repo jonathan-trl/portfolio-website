@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "about-me": "About me",
+    "technologies": "Technologies",
+    "portfolio": "Portfolio",
+    "my-career": "My Career",
+    "contact": "Contact"
+  },
+  "menu": {
+    "hero": {
+      "hello": "Hello! 👋,",
+      "i-am": "I am"
+    },
+    "typewriter": {
+      "profession": "I'm a Front-end Developer.",
+      "age": "I'm 22 years old!",
+      "location": "I'm from Lorena-SP."
+    }
+  },
+  "sections": {
+    "about-me": {
+      "title": "About Me",
+      "subtitle": "Nice to meet you..."
+    },
+    "technologies": {
+      "title": "Experiences",
+      "subtitle": "Technologies and skills"
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "subtitle": "Works and projects"
+    },
+    "my-career": {
+      "title": "My Career",
+      "subtitle": "Experiences"
+    },
+    "contact": {
+      "title": "Did you like it?",
+      "subtitle": "Contact!"
+    }
+  },
+  "buttons": {
+    "lets-talk": "Let's talk",
+    "curriculum": "Curriculum"
+  },
+  "about-me": {
+    "profession": "I am a Front End Developer experienced in helping companies achieve their goals by delivering high-quality software solutions. I have skills in React, React Hooks, Next.js, Bootstrap, Scss, TailwindCSS, TypeScript and unit testing, as well as experience in version control with Git.",
+    "committed": "I am committed to creating interactive and responsive experiences for users, constantly seeking to learn and apply best practices to deliver efficient solutions."
+  },
+  "informations": {
+    "card-one": {
+      "first-text": "4 years as a",
+      "second-text": "Programmer"
+    },
+    "card-two": {
+      "first-text": "Varied interfaces and systems",
+      "second-text": "Developed"
+    },
+    "card-three": {
+      "first-text": "Many projects and",
+      "second-text": "Experiences"
+    },
+    "card-four": {
+      "first-text": "Front-end",
+      "second-text": "Developer"
+    }
+  },
+  "portfolio": {
+    "ctc-tech": {
+      "description": "Institutional website developed for the company CTC Tech."
+    },
+    "next-tecnologia": {
+      "description": "Institutional website developed for the company Next Tecnologia."
+    },
+    "instituto-rh-na-pratica": {
+      "description": "Institutional website developed for the company Instituto RH na Prática."
+    },
+    "massagens-naturais": {
+      "description": "Website developed for a tantric massage clinic in Belo Horizonte - MG"
+    }
+  },
+  "my-career": {
+    "experiences": {
+      "loginfo": {
+        "position": "FullStack Developer",
+        "time_period": "September 2023 – Present",
+        "responsibilities": "<li>Development and support of web applications using HTML, CSS, JavaScript and CakePHP.</li><li>Development and maintenance of web applications using PHP and CakePHP, ensuring robust and scalable functionalities.</li>"
+      },
+      "ctc-tech": {
+        "position": "Front-end Developer",
+        "time_period": "September 2021 - April 2023",
+        "responsibilities": "<li>Development of web applications using JavaScript, PHP and React.</li><li>Responsible for the front-end development of a toll calculation system in ReactJS, optimizing the process and providing greater efficiency for customers.</li><li>Development of dynamic and interactive components with Vue.js, taking advantage of the framework's capabilities to build modern and efficient web applications.</li><li>Implementing responsive, cross-device-friendly designs, combining HTML, CSS, and JavaScript skills to ensure a consistent experience across all platforms.</li>"
+      },
+      "click-code": {
+        "position": "Wordpress Developer",
+        "time_period": "February 2021 - June 2021",
+        "responsibilities": "<li>Creation of Landing Pages with customization of WordPress themes and plugins according to client needs. This resulted in attractive and functional pages, increasing the conversion rate and target audience engagement.</li><li>Implementation of scalable and secure WordPress solutions, ensuring optimized performance and efficient website maintenance.</li><li>Integration of advanced and customized functionalities, such as e-commerce, content management systems and API integration, to meet customer demands.</li>"
+      },
+      "next-tecnologia": {
+        "position": "Intern and Front-end Developer",
+        "time_period": "November 2020 - September 2021",
+        "responsibilities": "<li>Development of web applications using HTML, CSS, JavaScript, Laravel Framework and WordPress.</li><li>I led the development of the company's institutional website, being responsible for the front end and back end.</li><li>Responsible for the complete development of a study system using Laravel. I developed both the back end and front end, offering users a robust and intuitive course platform.</li><li>Collaborate in agile teams to create and maintain reusable front-end components, promoting efficiency and consistency in software development.</li>"
+      },
+      "trial": {
+        "position": "Front-end Developer",
+        "time_period": "December 2019 - September 2021",
+        "responsibilities": "<li>Development of web applications using JavaScript, ReactJS, Laravel Framework and WordPress.</li><li>Leadership in the development of an e-commerce in WordPress to sell football shirts. It contributes to the success of e-commerce, providing an intuitive and attractive shopping experience, resulting in a significant amount of sales.</li><li>I participated in the development of a React Native application for natural massages, providing convenience to users when scheduling therapies in the comfort of home.</li>"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 · Developed by Jonathan Carvalho"
+  }
+}

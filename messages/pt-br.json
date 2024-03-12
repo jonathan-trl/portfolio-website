@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "about-me": "Sobre mim",
+    "technologies": "Tecnologias",
+    "portfolio": "Portfólio",
+    "my-career": "Carreira",
+    "contact": "Contato"
+  },
+  "menu": {
+    "hero": {
+      "hello": "Olá! 👋,",
+      "i-am": "eu sou"
+    },
+    "typewriter": {
+      "profession": "Sou Desenvolvedor Front-end.",
+      "age": "Tenho 22 anos!",
+      "location": "Sou de Lorena-SP."
+    }
+  },
+  "sections": {
+    "about-me": {
+      "title": "Sobre mim",
+      "subtitle": "Muito prazer..."
+    },
+    "technologies": {
+      "title": "Experiências",
+      "subtitle": "Tecnologias e habilidades"
+    },
+    "portfolio": {
+      "title": "Portfólio",
+      "subtitle": "Trabalhos e projetos"
+    },
+    "my-career": {
+      "title": "Minha Carreira",
+      "subtitle": "Experiências"
+    },
+    "contact": {
+      "title": "Gostou?",
+      "subtitle": "Entre em contato!"
+    }
+  },
+  "buttons": {
+    "lets-talk": "Vamos conversar",
+    "curriculum": "Currículo"
+  },
+  "about-me": {
+    "profession": "Sou um Desenvolvedor Front End experiente em auxiliar empresas a alcançarem seus objetivos, entregando soluções de software de alta qualidade. Possuo habilidades em React, React Hooks, Next.js, Bootstrap, Scss, TailwindCSS, TypeScript e testes unitários, além de experiência em controle de versão com Git.",
+    "committed": "Estou comprometido em criar experiências interativas e responsivas para os usuários, buscando constantemente aprender e aplicar as melhores práticas para entregar soluções eficientes."
+  },
+  "informations": {
+    "card-one": {
+      "first-text": "4 anos como",
+      "second-text": "Programador"
+    },
+    "card-two": {
+      "first-text": "Diversas interfaces e sistemas",
+      "second-text": "Desenvolvidos"
+    },
+    "card-three": {
+      "first-text": "Dezenas de projetos e",
+      "second-text": "Experiências"
+    },
+    "card-four": {
+      "first-text": "Desenvolvedor",
+      "second-text": "Front-end"
+    }
+  },
+  "portfolio": {
+    "ctc-tech": {
+      "description": "Site institucional desenvolvido para a empresa CTC Tech."
+    },
+    "next-tecnologia": {
+      "description": "Site institucional desenvolvido para a empresa Next Tecnologia."
+    },
+    "instituto-rh-na-pratica": {
+      "description": "Site institucional desenvolvido para a empresa Instituto RH na Prática."
+    },
+    "massagens-naturais": {
+      "description": "Site desenvolvido para uma clínica de massagens tântricas de Belo Horizonte - MG"
+    }
+  },
+  "my-career": {
+    "experiences": {
+      "loginfo": {
+        "position": "Desenvolvedor FullStack",
+        "time_period": "Setembro 2023 - Presente",
+        "responsibilities": "<li>Desenvolvimento e suporte de aplicação web utilizando HTML, CSS, JavaScript e CakePHP.</li><li>Desenvolvimento e manutenção de aplicações web utilizando PHP e CakePHP, garantindo funcionalidades robustas e escaláveis.</li><li>Construção de sistemas web dinâmicos e interativos, aproveitando as capacidades do PHP e do framework CakePHP para entrega de projetos de alta qualidade.</li><li>Experiência sólida em desenvolvimento full-stack, combinando habilidades em PHP, CakePHP e outras tecnologias front-end para criar aplicações web eficientes e modernas.</li>"
+      },
+      "ctc-tech": {
+        "position": "Desenvolvedor Front-end",
+        "time_period": "Setembro 2021 - Abril 2023",
+        "responsibilities": "<li>Desenvolvimento de aplicações web utilizando JavaScript, PHP e React.</li><li>Responsável pelo desenvolvimento front-end de um sistema de cálculo de pedágios em ReactJS, otimizando o processo e proporcionando maior eficiência para os clientes.</li><li>Desenvolvimento de componentes dinâmicos e interativos com Vue.js, aproveitando as capacidades do framework para construir aplicações web modernas e eficientes.</li><li>Implementação de designs responsivos e compatíveis com diversos dispositivos, combinando habilidades em HTML, CSS e JavaScript para garantir uma experiência consistente em todas as plataformas.</li>"
+      },
+      "click-code": {
+        "position": "Desenvolvedor WordPress",
+        "time_period": "Fevereiro 2021 - Junho 2021",
+        "responsibilities": "<li>Criação de Landing Pages com customização de temas e plugins do WordPress de acordo com as necessidades dos clientes. Isso resultou em páginas atrativas e funcionais, aumentando a taxa de conversão e o engajamento do público-alvo.</li><li>Implementação de soluções WordPress escaláveis e seguras, garantindo desempenho otimizado e manutenção eficiente dos sites.</li><li>Integração de funcionalidades avançadas e personalizadas, como comércio eletrônico, sistemas de gerenciamento de conteúdo e integração de APIs, para atender às demandas dos clientes.</li>"
+      },
+      "next-tecnologia": {
+        "position": "Estagiário e Desenvolvedor Front-end",
+        "time_period": "Novembro 2020 - Setembro 2021",
+        "responsibilities": "<li>Desenvolvimento de aplicações web utilizando HTML, CSS, JavaScript, Laravel Framework e WordPress.</li><li>Liderei o desenvolvimento do site institucional da empresa, sendo responsável pelo front end e back end.</li><li>Responsável pelo desenvolvimento completo de um sistema de estudos utilizando Laravel. Desenvolvi tanto o back end quanto o front end, oferecendo aos usuários uma plataforma de cursos robusta e intuitiva.</li><li>Colaboração em equipes ágeis para criar e manter componentes front-end reutilizáveis, promovendo a eficiência e a consistência no desenvolvimento de software.</li>"
+      },
+      "trial": {
+        "position": "Desenvolvedor Front-end",
+        "time_period": "Dezembro 2019 - Setembro 2021",
+        "responsibilities": "<li>Desenvolvimento de aplicações web utilizando JavaScript, ReactJS, Laravel Framework e WordPress.</li><li>Liderança no desenvolvimento de um e-commerce em WordPress para venda de camisas de futebol. Contribui para o sucesso do e-commerce, proporcionando uma experiência de compra intuitiva e atraente, resultando em significativa quantidade de vendas.</li><li>Participei do desenvolvimento de um aplicativo em React Native para massagens naturais, proporcionando conveniência aos usuários ao agendar terapias no conforto de casa.</li>"
+      }
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 · Desenvolvido por Jonathan Carvalho"
+  }
+}

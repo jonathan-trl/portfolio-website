@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  box-sizing: border-box
+}
+
+body {
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @apply bg-purple-dark;
+}
+
+.info-card {
+  background: linear-gradient(#0d0d15, #0d0d15) padding-box,
+    linear-gradient(to bottom right, #b76dff, transparent 90%) border-box;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+}
+
+.slick-dots li {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  will-change: width;
+  margin: 0 7px;
+}
+
+.light .slick-dots.slick-dots-techologies li {
+  @apply bg-purple-primary/30;
+}
+
+.light .slick-dots li.slick-active,
+.dark .slick-dots li.slick-active {
+  @apply bg-purple-primary/100;
+  width: 30px;
+}
