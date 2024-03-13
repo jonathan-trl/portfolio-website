@@ -17,8 +17,8 @@ export const MyCareer = () => {
     setSelectedCompanyId(companyId)
   }
   return (
-    <div className="g grid grid-cols-1 md:grid-cols-3 md:gap-4">
-      <div className="flex flex-col gap-1 md:gap-2">
+    <div className="grid md:grid-cols-8 xl:grid-cols-5">
+      <div className="flex flex-col gap-1 md:col-span-3 md:gap-2 xl:col-span-2">
         <SectionHeader
           title={t('my-career.title')}
           subtitle={t('my-career.subtitle')}
@@ -47,7 +47,7 @@ export const MyCareer = () => {
           ))}
         </div>
       </div>
-      <div className="mx-auto mt-6 max-w-[500px] md:col-span-2 md:ml-9 md:mt-0 md:max-w-[700px]">
+      <div className="mt-6 md:col-span-5 md:ml-8 md:mt-0 xl:col-span-3">
         {selectedCompanyId && (
           <>
             {careerExperiencesItems.map(

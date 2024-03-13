@@ -1,18 +1,29 @@
 'use client'
 import { AnimationProps } from 'framer-motion'
 import { HTMLProps, ReactNode } from 'react'
+import { VariantProps, tv } from 'tailwind-variants'
 import { MotionEffects } from '../MotionEffects'
 import { SectionHeader } from '../SectionHeader'
 
+const tvSection = tv({
+  base: 'py-10 md:py-16 lg:py-20',
+  variants: {
+    lightMode: {
+      true: 'bg-white dark:bg-purple-dark',
+      false: 'bg-purple-dark',
+    },
+  },
+})
+
 type SectionProps = {
-  lightMode?: boolean
   title?: string
   subtitle?: string
   center?: boolean
   icon?: ReactNode
   noSectionHeader?: boolean
 } & AnimationProps &
-  HTMLProps<HTMLDivElement>
+  HTMLProps<HTMLDivElement> &
+  VariantProps<typeof tvSection>
 
 export const Section = ({
   children,
@@ -28,12 +39,7 @@ export const Section = ({
   noSectionHeader,
 }: SectionProps) => {
   return (
-    <section
-      className={`${
-        lightMode ? 'bg-white dark:bg-purple-dark' : 'bg-purple-dark'
-      } ${className ? className : 'py-10 md:py-16 lg:py-20'}`}
-      id={id}
-    >
+    <section className={tvSection({ lightMode, className })} id={id}>
       <MotionEffects
         variants={
           variants

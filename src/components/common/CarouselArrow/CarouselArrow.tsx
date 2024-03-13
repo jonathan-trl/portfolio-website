@@ -1,6 +1,17 @@
 import { MouseEventHandler } from 'react'
 import { IconType } from 'react-icons'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+import { VariantProps, tv } from 'tailwind-variants'
+
+const tvCarouselArrowContainer = tv({
+  base: 'absolute top-1/2 z-50 flex h-5 w-5 -translate-y-1/2 transform items-center justify-center rounded-full bg-white text-sm xl:h-7 xl:w-7 xl:text-base',
+  variants: {
+    arrowDirection: {
+      prev: '-left-12',
+      next: '-right-12',
+    },
+  },
+})
 
 type CarouselArrow = {
   onClick?: MouseEventHandler<HTMLButtonElement>
@@ -8,8 +19,8 @@ type CarouselArrow = {
 
 type CarouselArrowContainerProps = {
   icon: IconType
-  arrowDirection: 'prev' | 'next'
-} & CarouselArrow
+} & CarouselArrow &
+  VariantProps<typeof tvCarouselArrowContainer>
 
 const CarouselArrowContainer = ({
   onClick,
@@ -17,9 +28,7 @@ const CarouselArrowContainer = ({
   arrowDirection,
 }: CarouselArrowContainerProps) => (
   <button
-    className={`absolute top-1/2 ${
-      arrowDirection == 'next' ? '-right-12' : '-left-12'
-    } z-50 flex h-5 w-5 -translate-y-1/2 transform items-center justify-center rounded-full bg-white text-sm xl:h-7 xl:w-7 xl:text-base`}
+    className={tvCarouselArrowContainer({ arrowDirection })}
     onClick={onClick}
   >
     <Icon className="text-purple-primary" />
