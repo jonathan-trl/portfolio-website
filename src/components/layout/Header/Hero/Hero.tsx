@@ -19,7 +19,7 @@ export const Hero = () => {
         visible: { opacity: 1, y: 0 },
       }}
     >
-      <div className="flex flex-col items-center justify-between pb-2 pt-20 lg:flex-row">
+      <div className="flex flex-col items-center justify-between pt-20 lg:flex-row">
         <div className="order-2 flex flex-col items-center gap-1 md:gap-2 lg:order-1 lg:items-start">
           <span className="relative overflow-hidden text-lg font-bold text-purple-primary md:text-4xl">
             <MotionEffects

@@ -17,7 +17,7 @@ export const Menu = () => {
   }
 
   return (
-    <div className="pb-6 pt-8 md:pb-16">
+    <>
       <div className="flex w-full flex-1 items-center justify-between gap-4">
         <Logo />
         <MotionEffects
@@ -49,6 +49,6 @@ export const Menu = () => {
           <Nav items={navItems} />
         </div>
       )}
-    </div>
+    </>
   )
 }

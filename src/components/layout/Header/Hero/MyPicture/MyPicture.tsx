@@ -6,7 +6,7 @@ export const MyPicture = () => {
   return (
     <motion.div
       className="relative h-[190px] w-[190px] md:h-96 md:w-96"
-      animate={{
+animate={{
         y: [-3, 3, -3],
         transition: { duration: 3, repeat: Infinity },
       }}
@@ -16,7 +16,7 @@ export const MyPicture = () => {
         alt="Logo"
         layout="fill"
         loading="lazy"
-        className="info-card rounded-full border-[6px] border-solid border-transparent object-cover"
+        className="info-card rounded-full border-[6px] border-solid border-transparent object-cover object-top-27"
       />
     </motion.div>
   )

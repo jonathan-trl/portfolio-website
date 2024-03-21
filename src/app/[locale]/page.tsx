@@ -15,7 +15,7 @@ export default function Home() {
   const t = useTranslations('sections')
   return (
     <>
-      <header className="bg-purple-dark pb-6 md:pb-10 lg:pb-20">
+      <header className="bg-purple-dark pb-6 pt-10 md:pb-10 lg:pb-20">
         <div className="container mx-auto">
           <Header />
         </div>

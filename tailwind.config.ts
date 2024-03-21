@@ -36,6 +36,9 @@ const config: Config = {
       'barlow-condensed': 'var(--font-barlow-condensed)',
       'plus-jakarta-sans': 'var(--font-plus-jakarta-sans)',
     },
+    objectPosition: {
+      'top-27': '50% 27%'
+    }
   },
   darkMode: 'class',
   plugins: [],
