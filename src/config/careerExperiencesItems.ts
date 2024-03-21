@@ -4,26 +4,26 @@ export const careerExperiencesItems: CareerExperienceItem[] = [
   {
     id: 1,
     company: 'LOGINFO',
-    translate: 'loginfo',
+    slug: 'loginfo',
   },
   {
     id: 2,
     company: 'CTC Tech',
-    translate: 'ctc-tech',
+    slug: 'ctc-tech',
   },
   {
     id: 3,
     company: 'Click Code',
-    translate: 'click-code',
+    slug: 'click-code',
   },
   {
     id: 4,
     company: 'Next Tecnologia',
-    translate: 'next-tecnologia',
+    slug: 'next-tecnologia',
   },
   {
     id: 5,
     company: 'TRIAL',
-    translate: 'trial',
+    slug: 'trial',
   },
 ]

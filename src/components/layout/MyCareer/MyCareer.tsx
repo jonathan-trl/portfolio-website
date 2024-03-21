@@ -64,7 +64,7 @@ export const MyCareer = () => {
                     className="text-center text-gray-primary dark:text-white md:text-start"
                   >
                     <p className="mb-2 font-plus-jakarta-sans text-lg font-extrabold lg:text-2xl">
-                      {t_experiences(`${experience.translate}.position`)}
+                      {t_experiences(`${experience.slug}.position`)}
                     </p>
 
                     <p className="relative mb-2 flex items-center justify-center gap-2 overflow-hidden text-lg font-semibold md:justify-start lg:text-2xl">
@@ -72,13 +72,13 @@ export const MyCareer = () => {
                         <LuCalendarClock className="text-purple-dark dark:text-white" />
                       </span>
                       <span>
-                        {t_experiences(`${experience.translate}.time_period`)}
+                        {t_experiences(`${experience.slug}.time_period`)}
                       </span>
                     </p>
 
                     <ul className="list-disc pl-2 text-start md:pl-0">
                       {t_experiences.rich(
-                        `${experience.translate}.responsibilities`,
+                        `${experience.slug}.responsibilities`,
                         {
                           li: (responsabilities) => (
                             <li className="mt-2 font-plus-jakarta-sans text-base font-medium lg:text-lg">
